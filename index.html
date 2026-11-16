@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101116">
+  <meta name="description" content="Personal portfolio website">
+  <title>Panji</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#about">Skip to content</a>
+
+  <header class="topbar" id="topbar">
+    <!-- <a class="brand" href="#home" aria-label="Go to home">portfolio<span>.</span></a> -->
+
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="sectionNav">
+      <span class="menu-icon" aria-hidden="true">☰</span>
+      <span>Sections</span>
+    </button>
+
+    <nav class="section-nav" id="sectionNav" aria-label="Main navigation">
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#skills">Skills</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode" title="Toggle light/dark mode">
+      <span id="themeIcon" aria-hidden="true">☼</span>
+      <span class="theme-label">Light</span>
+    </button>
+  </header>
+
+  <main id="portfolioSections">
+    <p class="loading-message">Loading portfolio…</p>
+
+    <!-- about section is loaded from html/about.html -->
+
+    <!-- skills section is loaded from html/skills.html -->
+
+    <!-- projects section is loaded from html/projects.html -->
+
+    <!-- contact section is loaded from html/contact.html -->
+  </main>
+
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+</body>
+</html>

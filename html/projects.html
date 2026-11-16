@@ -1,0 +1,416 @@
+
+<section class="panel content-panel projects-page" id="projects" data-section="Projects">
+
+  <div class="section-heading reveal">
+    <h2>Things I've <span class="accent">worked on.</span></h2>
+    <p class="section-intro">Some of the projects I've worked on.</p>
+  </div>
+
+  <div class="project-grid">
+
+    <!-- Project 1: BlurIn -->
+    <article class="project-card glass reveal">
+      <div class="project-art art-purple">
+        <img
+          src="assets/foto_project/blurIn.png"
+          alt="BlurIn project preview"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="project-body">
+        <h3>BlurIn</h3>
+        <p>
+          Identifies a specific person using a reference face photo and blur their face throughout a video.
+        </p>
+
+        <div class="project-links">
+          <a
+            href="https://github.com/ihsanpanji-bot/Blur-Wajah"
+            target="_blank"
+            rel="noopener noreferrer"
+          >GitHub ↗</a>
+
+          <button
+            type="button"
+            class="project-details-trigger"
+            data-details="details-blurin"
+          >
+            Project Details ↗
+          </button>
+
+          <a
+            href="https://blurin.streamlit.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Live Demo ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 2: Film Review Sentiment -->
+    <article class="project-card glass reveal">
+      <div class="project-art art-blue">
+        <img
+          src="assets/foto_project/filmReview.png"
+          alt="Film Review Sentiment project preview"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="project-body">
+        <h3>Film Review Sentiment</h3>
+        <p>
+          classifies written movie reviews into two sentiment categories: Positive and Negative.
+        </p>
+
+        <div class="project-links">
+          <a
+            href="https://github.com/ihsanpanji-bot/FilmReviewSentiment"
+            target="_blank"
+            rel="noopener noreferrer"
+          >GitHub ↗</a>
+
+          <button
+            type="button"
+            class="project-details-trigger"
+            data-details="details-film-review"
+          >
+            Project Details ↗
+          </button>
+
+          <a
+            href="https://film-review-sentiment-imdb.streamlit.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Live Demo ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 3: Prediksi Energi Rumah Tangga -->
+    <article class="project-card glass reveal">
+      <div class="project-art art-orange">
+        <img
+          src="assets/foto_project/energiRumahTangga.png"
+          alt="Prediksi Energi Rumah Tangga project preview"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="project-body">
+        <h3>Prediksi Energi Rumah Tangga</h3>
+        <p>
+          Predicting household appliance energy consumption based on indoor environmental conditions and outdoor weather data.
+        </p>
+
+        <div class="project-links">
+          <a
+            href="https://github.com/ihsanpanji-bot/PrediksiEnergiRumahTangga"
+            target="_blank"
+            rel="noopener noreferrer"
+          >GitHub ↗</a>
+
+          <button
+            type="button"
+            class="project-details-trigger"
+            data-details="details-energy"
+          >
+            Project Details ↗
+          </button>
+
+          <a
+            href="https://energy-consumption-prediction-zmtydhsh5pmeuseeoghfha.streamlit.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Live Demo ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 4: Pakai Lagi Aja -->
+    <article class="project-card glass reveal">
+      <div class="project-art art-orange">
+        <img
+          src="assets/foto_project/pakaiLagiAja.png"
+          alt="Pakai Lagi Aja project preview"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="project-body">
+        <h3>Pakai Lagi Aja</h3>
+        <p>
+          Web platform that facilitates the borrowing, exchanging, and free distribution of secondhand household items.
+        </p>
+
+        <div class="project-links">
+          <a
+            href="https://github.com/ihsanpanji-bot/Pakai-Lagi-Aja"
+            target="_blank"
+            rel="noopener noreferrer"
+          >GitHub ↗</a>
+
+          <button
+            type="button"
+            class="project-details-trigger"
+            data-details="details-pakai-lagi"
+          >
+            Project Details ↗
+          </button>
+
+          <a
+            href="https://pakailagiaja.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Live Demo ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 5: Hand Sign Alfabet -->
+    <article class="project-card glass reveal">
+      <div class="project-art art-orange">
+        <img
+          src="assets/foto_project/handSign.png"
+          alt="Hand Sign project preview"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="project-body">
+        <h3>Hand Sign Alfabet</h3>
+        <p>
+          Translating sign language hand gestures into readable text in real time
+        </p>
+
+        <div class="project-links">
+          <a
+            href="https://github.com/ihsanpanji-bot/HandSign-Alfabet"
+            target="_blank"
+            rel="noopener noreferrer"
+          >GitHub ↗</a>
+
+          <button
+            type="button"
+            class="project-details-trigger"
+            data-details="details-hand-sign"
+          >
+            Project Details ↗
+          </button>
+
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- PROJECT DETAILS CONTENT -->
+
+  <!-- BlurIn -->
+  <template id="details-blurin">
+    <h2 id="projectModalTitle">BlurIn</h2>
+
+    <p>
+      BlurIn is a video anonymization application that identifies a specific person using a reference face photo and automatically applies Gaussian blur to their face throughout a video. It combines computer vision techniques for face detection, feature matching, and object tracking to maintain the target's location across video frames.
+    </p>
+
+    <h3>Project Overview</h3>
+    <p>
+      BlurIn allows users to upload a single reference face photo and a video containing multiple people. The application identifies the person matching the reference photo and blurs their face while leaving other detected faces unchanged.
+      Implemented features include:
+- Reference-Based Face Matching: Identifies the target person by comparing visual features from the reference photo with detected faces in the video.
+- Face Detection: Uses Haar Cascade to locate faces in video frames.
+- Feature Matching: Combines SIFT and FLANN with Lowe's Ratio Test to find matching visual features.
+- Object Tracking: Uses Lucas-Kanade Optical Flow to follow the target's movement between frames.
+- Automatic Face Blurring: Applies adjustable Gaussian Blur to the target's face.
+- Video Processing: Displays processing progress, provides processing statistics, previews the resulting video, and allows users to download it.
+- Advanced Settings: Allows users to adjust matching thresholds, tracking points, blur strength, padding, and detection intervals.
+    </p>
+
+    <h3>Development Process</h3>
+    <p>
+      BlurIn was developed using Python and Streamlit, with OpenCV as its primary computer vision library.
+
+The development process involved:
+1. Interface Development: Built a web-based interface using Streamlit and custom CSS, including image and video uploads, adjustable settings, and output previews.
+2. Face Detection: Implemented Haar Cascade to detect faces in uploaded images and video frames.
+3. Feature Extraction and Matching: Used SIFT to extract image descriptors and FLANN to match features, applying Lowe's Ratio Test to filter unreliable matches.
+4. Target Localization: Applied Homography estimation with RANSAC to estimate the target's position within detected face regions.
+5. Object Tracking: Implemented Lucas-Kanade Optical Flow to track the target between frames, with periodic face re-detection to maintain tracking reliability.
+6. Video Anonymization: Applied Gaussian Blur to the target's face, with bounding-box smoothing and temporary blur retention when detection is briefly lost.
+7. Video Export: Used OpenCV VideoWriter and FFmpeg to generate a browser-compatible MP4 output.
+    </p>
+
+    <h3>Outcome & Learning</h3>
+    <p>
+      The final result is a functional web application that can identify a specific person from a reference photo and automatically blur their face in an uploaded video. Users can adjust processing parameters, monitor progress, preview the processed video, and download the result.
+
+During development, key challenges included maintaining reliable feature matching across different video frames, handling changes in face position, and preventing unstable blur regions during tracking.
+
+This project provided practical experience in combining multiple computer vision techniques, including face detection, feature matching, optical flow tracking, geometric transformation, and video processing, while integrating them into an interactive web application using Streamlit.
+    </p>
+  </template>
+
+  <!-- Film Review Sentiment -->
+  <template id="details-film-review">
+    <h2 id="projectModalTitle">Film Review Sentiment</h2>
+
+    <p>
+      Film Review Sentiment is a project focused on analyzing sentiment in film 
+      reviews using Natural Language Processing (NLP) and Machine Learning. 
+      It classifies written movie reviews into two sentiment categories: Positive and Negative.
+    </p>
+
+    <h3>Project Overview</h3>
+    <p>
+      The project uses the IMDB Movie Reviews Dataset,
+      consisting of 50,000 reviews with an equal distribution of positive 
+      and negative sentiments. The objective is to build a sentiment classification system that can identify the overall opinion expressed in a movie review.
+    </p>
+
+    <h3>Development Process</h3>
+    <p>
+      Describe the text preparation, model development, training, and
+      evaluation steps that were actually carried out in this project.
+    </p>
+
+    <h3>Outcome & Learning</h3>
+    <p>
+      The project produced an interactive Streamlit web application where users 
+      can enter a movie review and compare sentiment predictions from both models. 
+      The SVM model achieved 89.84% accuracy, outperforming Naive Bayes, which achieved 87.92%. Through this project, 
+      I learned how to preprocess text data, apply TF-IDF for feature extraction, train and evaluate machine learning models, and integrate trained models into a web application for real-time sentiment prediction.
+    </p>
+  </template>
+
+  <!-- Prediksi Energi Rumah Tangga -->
+  <template id="details-energy">
+    <h2 id="projectModalTitle">Prediksi Energi Rumah Tangga</h2>
+
+    <p>
+      Prediksi Energi Rumah Tangga is a project focused on predicting 
+      household appliance energy consumption using machine learning based on indoor environmental conditions and outdoor weather data.
+    </p>
+
+    <h3>Project Overview</h3>
+    <p>
+      The project aims to estimate household appliance energy consumption (Wh) 
+      using the energydata_complete.csv dataset, which contains 19,735 records covering indoor temperature, humidity, lighting, and outdoor weather conditions. 
+      The prediction target is Appliances, representing household appliance energy consumption.
+    </p>
+
+    <h3>Development Process</h3>
+    <p>
+      The development process started with Exploratory Data Analysis (EDA) to understand the dataset, 
+      examine statistical values, correlations, and missing values. 
+      Feature selection was performed by separating the input features and prediction target, 
+      followed by an 80:20 train-test split and StandardScaler preprocessing. 
+      Three regression models were developed and compared: Linear Regression, Random Forest Regressor, and XGBoost Regressor. 
+      Their performance was evaluated using Mean Squared Error (MSE) and R² Score. 
+      Random Forest achieved the best evaluation results, followed by XGBoost and Linear Regression. 
+      The Random Forest and XGBoost pipelines were then saved as .pkl files for application use.
+    </p>
+
+    <h3>Outcome & Learning</h3>
+    <p>
+      The project produced two trained prediction models, Random Forest and XGBoost, integrated into a Streamlit web application. 
+      Users can enter indoor temperature and lighting information, 
+      retrieve outdoor weather data through the Open-Meteo API or enter it manually, 
+      and compare the estimated energy consumption from both models. 
+      Through this project, I gained experience in data exploration, preprocessing, regression algorithms, model evaluation, and deploying machine learning models into an interactive web application.
+    </p>
+  </template>
+
+  <!-- Pakai Lagi Aja -->
+  <template id="details-pakai-lagi">
+    <h2 id="projectModalTitle">Pakai Lagi Aja</h2>
+
+    <p>
+      Pakai Lagi Aja is a community-based web platform that facilitates the borrowing, exchanging, and free distribution of secondhand household items.
+    </p>
+
+    <h3>Project Overview</h3>
+    <p>
+      The platform is designed for university students and campus communities who want to share items they no longer use rather than discarding them. 
+      Users can register an account, list items in the catalog, submit borrowing requests to item owners, and track their transaction history.
+
+      Key features include: user registration and login, an item catalog with filters for category, status, and type (Borrow/Free), a borrowing request system with an owner approval 
+      flow, notifications for owners when a new request comes in, item returns with star ratings, free item distribution that permanently removes the item from the catalog once 
+      claimed, and a personal dashboard displaying real-time activity statistics and item lifecycle timelines.
+    </p>
+
+    <h3>Development Process</h3>
+    <p>
+      Development began with interface design using plain HTML and CSS, following a clean and responsive layout, before moving on to backend development using Node.js and Express. 
+      The MySQL database was managed locally through XAMPP/phpMyAdmin. Frontend-to-backend communication was handled via REST API with CORS enabled, 
+      while user sessions were stored in the browser’s localStorage.
+
+      The backend was structured into controllers, routes, and a database layer. The photo upload feature used Multer with Cropper.js for in-browser image cropping before submission. 
+      Item status was designed to follow a staged flow — Available → Pending → Borrowed → Available again — ensuring every transition is recorded and auditable through a lifecycle timeline.
+    </p>
+
+    <h3>Outcome & Learning</h3>
+    <p>
+      Through this project, a solid understanding was gained of full-stack architecture, database-driven state management, and the importance of server-side validation in 
+      maintaining system integrity.
+    </p>
+  </template>
+
+  <!-- Hand Sign Alfabet -->
+  <template id="details-hand-sign">
+    <h2 id="projectModalTitle">Hand Sign Alfabet</h2>
+
+    <p>
+      Hand Sign Alfabet is a computer vision project that bridges communication gaps by translating sign language hand gestures into readable text in real time, 
+      offering users an intuitive and interactive way to practice and interpret the sign language alphabet.
+    </p>
+
+    <h3>Project Overview</h3>
+    <p>
+      The objective of this application is to accurately recognize static hand gestures representing the letters of the alphabet (excluding dynamic letters like J and Z). 
+      Users simply perform a hand sign in front of their webcam, and the system immediately detects the gesture and displays the corresponding letter on screen, 
+      making it accessible for both learning and basic communication.
+    </p>
+
+    <h3>Development Process</h3>
+    <p>
+      The model was trained using the Sign Language MNIST dataset (sign_mnist_test.csv and its training counterpart) containing grayscale images of hand gestures. 
+      Using Python, OpenCV, and deep learning frameworks (such as TensorFlow/PyTorch), the pipeline preprocesses video frames, 
+      isolates the hand region, and feeds the normalized input into a Convolutional Neural Network (CNN) to classify and display the predicted letter in real time.
+    </p>
+
+    <h3>Outcome & Learning</h3>
+    <p>
+      The final system successfully classifies static alphabet hand signs with high accuracy and minimal latency under consistent lighting conditions. 
+      Through this project, key insights were gained in image preprocessing, handling variations in lighting and backgrounds, and optimizing CNN architectures for real-time 
+      computer vision inference.
+    </p>
+  </template>
+
+  <!-- One shared modal for all projects -->
+  <div class="project-modal" id="projectModal" aria-hidden="true">
+    <div
+      class="project-modal-dialog glass"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="projectModalTitle"
+      tabindex="-1"
+    >
+      <button
+        type="button"
+        class="project-modal-close"
+        id="closeProjectModal"
+        aria-label="Close project details"
+      >
+        &times;
+      </button>
+
+      <div
+        class="project-modal-content"
+        id="projectModalContent"
+      ></div>
+    </div>
+  </div>
+
+</section>

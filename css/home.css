@@ -1,0 +1,140 @@
+
+/* ===== HOME SECTION ===== */
+
+.hero {
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: 6vw;
+}
+
+.hero-visual {
+  min-height: 0;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.hero-copy {
+  max-width: 760px;
+}
+
+.hero-copy h1 {
+  font-size: clamp(2.5rem, 4.5vw, 4.6rem);
+  overflow-wrap: anywhere;
+  margin-bottom: 18px;
+}
+
+.hero-role {
+  color: var(--accent);
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  margin-bottom: 18px;
+}
+
+/* Profile photo card */
+
+.profile-card {
+  width: min(100%, 360px);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 14px;
+  transform: none;
+}
+
+.profile-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid var(--line);
+  border-radius: 17px;
+  background: var(--surface);
+}
+
+/* LinkedIn and GitHub links */
+
+.profile-socials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.profile-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 15px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 700;
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.profile-social-link:hover {
+  color: var(--accent);
+  background: var(--surface-strong);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.profile-social-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* Tablet */
+
+@media (max-width: 860px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 30px;
+  }
+
+  .hero-visual {
+    width: 100%;
+  }
+
+  .profile-card {
+    width: min(100%, 340px);
+  }
+
+  .hero-copy {
+    width: 100%;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 560px) {
+  .hero {
+    gap: 24px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.3rem, 10vw, 3.3rem);
+  }
+
+  .hero-role {
+    font-size: 1.4rem;
+  }
+
+  .profile-card {
+    width: min(100%, 320px);
+  }
+
+  .profile-social-link {
+    flex: 1;
+  }
+}

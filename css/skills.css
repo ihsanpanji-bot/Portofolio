@@ -1,0 +1,271 @@
+
+/* ===== SKILLS PAGE ===== */
+
+.skills-page {
+  gap: 0;
+}
+
+/* Main heading */
+
+.skills-heading {
+  max-width: 850px;
+  margin-bottom: 28px;
+}
+
+.skills-heading h2 {
+  margin-bottom: 14px;
+}
+
+.skills-heading .section-intro {
+  max-width: 760px;
+  margin-bottom: 0;
+  line-height: 1.8;
+}
+
+/* Shared section layout */
+
+.skills-block {
+  width: 100%;
+  padding: 24px 0 28px;
+}
+
+.soft-skills-block {
+  border-bottom: 1px solid var(--line);
+}
+
+.hard-skills-block {
+  padding-top: 28px;
+}
+
+/* Section titles */
+
+.skills-block-heading {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 26px;
+}
+
+.skills-block-heading h3 {
+  margin: 0;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.skills-icon-badge {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 14px;
+  background: linear-gradient(135deg, #298667, #8fc7a0);
+  color: #ffffff;
+
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+/* Soft skills: three columns */
+
+.soft-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 28px;
+  row-gap: 24px;
+}
+
+
+/* Hard skills: three category columns */
+
+.hard-skills-block {
+  padding-top: 28px;
+}
+
+.hard-skills-block .skills-block-heading {
+  margin-bottom: 42px;
+}
+
+.hard-skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 48px;
+  row-gap: 32px;
+}
+
+.hard-skill-category {
+  min-width: 0;
+}
+
+.hard-skill-category h4 {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  margin: 0 0 28px;
+}
+
+.hard-skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+/* Individual skill rows */
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+
+  color: var(--text);
+  font-size: 0.96rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.skill-item > span:last-child {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.skill-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 24px;
+  min-width: 24px;
+
+  color: #82b99a;
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+/* Tablet */
+
+@media (max-width: 1000px) {
+  .soft-skills-grid {
+    column-gap: 18px;
+  }
+
+  .hard-skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px 24px;
+  }
+
+  .skill-item {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile and small tablets */
+
+@media (max-width: 680px) {
+  .skills-heading {
+    margin-bottom: 18px;
+  }
+
+  .skills-block {
+    padding: 22px 0;
+  }
+
+  .skills-block-heading {
+    margin-bottom: 22px;
+  }
+
+  .soft-skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 14px;
+  }
+
+  .hard-skills-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .hard-skill-category h4 {
+    margin-bottom: 15px;
+  }
+
+  .hard-skill-list {
+    gap: 15px;
+  }
+}
+
+/* Small phones */
+
+@media (max-width: 420px) {
+  .soft-skills-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .skill-item {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+/* Hard skill icon styling */
+
+.hard-skill-category .skill-icon {
+  width: 30px;
+  min-width: 30px;
+  font-size: 1.3rem;
+  color: #8fc7a0;
+}
+
+.hard-skill-category .skill-item {
+  gap: 16px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.hard-skill-category .html-icon,
+.hard-skill-category .css-icon,
+.hard-skill-category .ts-icon,
+.hard-skill-category .js-icon {
+  width: 22px;
+  min-width: 22px;
+  height: 24px;
+  background: #8fc7a0;
+  color: #17332c;
+  font-size: 0.68rem;
+  font-weight: 900;
+}
+
+.hard-skill-category .python-icon {
+  font-size: 1.2rem;
+}
+
+.hard-skill-category .php-icon {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.hard-skill-category .c-icon {
+  font-size: 1.8rem;
+}
+
+.hard-skill-category .sql-icon {
+  font-size: 1.5rem;
+}
+
+.hard-skill-category .cisco-icon {
+  font-size: 0.55rem;
+  letter-spacing: -0.04em;
+}
+
+.hard-skill-category .language-icon {
+  font-size: 1.35rem;
+}
+
